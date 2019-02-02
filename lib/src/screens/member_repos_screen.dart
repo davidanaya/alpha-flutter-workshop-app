@@ -20,9 +20,7 @@ class MemberReposScreen extends StatelessWidget {
             return FutureBuilder(
                 future: provider.getReposFromMember(member.login),
                 builder: (context, AsyncSnapshot<List<ListItem>> snapshot) =>
-                    snapshot.hasData
-                        ? _buildList(snapshot.data)
-                        : Center(child: CircularProgressIndicator()));
+                    _buildList(snapshot.hasData ? snapshot.data : []));
           },
         ));
   }
@@ -46,7 +44,10 @@ class MemberReposScreen extends StatelessWidget {
   }
 
   Widget _buildImage(String imageUrl) {
-    return Container(
-        padding: EdgeInsets.all(32.0), child: Image.network(imageUrl));
+    return Hero(
+      tag: member.login,
+      child: Container(
+          padding: EdgeInsets.all(32.0), child: Image.network(imageUrl)),
+    );
   }
 }

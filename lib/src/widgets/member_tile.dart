@@ -10,8 +10,11 @@ class MemberTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircleAvatar(
-        backgroundImage: NetworkImage(member.avatarUrl),
+      leading: Hero(
+        tag: member.login,
+        child: CircleAvatar(
+          backgroundImage: NetworkImage(member.avatarUrl),
+        ),
       ),
       title: Text(member.login),
       subtitle: Text(member.htmlUrl),

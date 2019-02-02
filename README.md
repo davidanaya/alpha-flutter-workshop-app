@@ -35,3 +35,5 @@ You can click on each branch below to get to each exercise:
 [9-scoped-model](./exercises/9-scoped-model.md)
 
 [10-refactor-avatar](./exercises/10-refactor-avatar.md)
+
+[11-hero-animation](./exercises/11-hero-animation.md)
