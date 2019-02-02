@@ -1,23 +1,26 @@
 import 'package:alpha_flutter_workshop_app/src/models/member.dart';
-import 'package:alpha_flutter_workshop_app/src/providers/github_api_provider.dart';
+import 'package:alpha_flutter_workshop_app/src/scoped-models/github_api_provider.dart';
 import 'package:alpha_flutter_workshop_app/src/widgets/member_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:scoped_model/scoped_model.dart';
 
 class MembersListScreen extends StatelessWidget {
-  final GithubApiProvider githubProvider;
-
-  MembersListScreen(this.githubProvider);
+  MembersListScreen();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: FutureBuilder(
-          future: githubProvider.getMembers(),
-          builder: (context, AsyncSnapshot<List<Member>> snapshot) {
-            return snapshot.hasData
-                ? _buildList(snapshot.data)
-                : Center(child: CircularProgressIndicator());
-          }),
+      body: ScopedModelDescendant<GithubApiProvider>(
+        builder: (context, child, GithubApiProvider provider) {
+          return FutureBuilder(
+              future: provider.getMembers(),
+              builder: (context, AsyncSnapshot<List<Member>> snapshot) {
+                return snapshot.hasData
+                    ? _buildList(snapshot.data)
+                    : Center(child: CircularProgressIndicator());
+              });
+        },
+      ),
     );
   }
 

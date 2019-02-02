@@ -1,11 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:alpha_flutter_workshop_app/src/models/member.dart';
 import 'package:alpha_flutter_workshop_app/src/models/repo.dart';
 import 'package:http/http.dart' as http;
-import 'package:alpha_flutter_workshop_app/src/models/member.dart';
+import 'package:scoped_model/scoped_model.dart';
 
-class GithubApiProvider {
+class GithubApiProvider extends Model {
   Future<List<Member>> getMembers() async {
     final response =
         await http.get('https://api.github.com/orgs/Alpha-health/members');
