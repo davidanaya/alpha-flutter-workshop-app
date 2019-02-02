@@ -10,15 +10,23 @@ class MembersListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<Member> members = githubProvider.getMembers();
-
     return Scaffold(
-      body: ListView.builder(
-        itemCount: members.length,
-        itemBuilder: (context, index) {
-          return MemberTile(members[index]);
-        },
-      ),
+      body: FutureBuilder(
+          future: githubProvider.getMembers(),
+          builder: (context, AsyncSnapshot<List<Member>> snapshot) {
+            return snapshot.hasData
+                ? _buildList(snapshot.data)
+                : Center(child: CircularProgressIndicator());
+          }),
+    );
+  }
+
+  Widget _buildList(List<Member> members) {
+    return ListView.builder(
+      itemCount: members.length,
+      itemBuilder: (context, index) {
+        return MemberTile(members[index]);
+      },
     );
   }
 }
