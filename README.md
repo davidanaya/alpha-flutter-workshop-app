@@ -19,3 +19,5 @@ You can click on each branch below to get to each exercise:
 [1-blank-app](./exercises/1-blank-app.md)
 
 [2-github-org-members](./exercises/2-github-org-members.md)
+
+[3-format-list](./exercises/3-format-list.md)
