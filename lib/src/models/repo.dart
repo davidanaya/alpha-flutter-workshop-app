@@ -1,4 +1,6 @@
-class Repo {
+import 'package:alpha_flutter_workshop_app/src/models/list_item.dart';
+
+class Repo implements ListItem {
   final int id;
   final String name;
   final String htmlUrl;
