@@ -25,3 +25,5 @@ You can click on each branch below to get to each exercise:
 [4-futures](./exercises/4-futures.md)
 
 [5-navigation](./exercises/5-navigation.md)
+
+[6-member-repos](./exercises/6-member-repos.md)

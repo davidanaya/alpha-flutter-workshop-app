@@ -1,3 +1,4 @@
+import 'package:alpha_flutter_workshop_app/src/screens/member_repos_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:alpha_flutter_workshop_app/src/providers/github_api_provider.dart';
@@ -21,7 +22,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MembersListScreen(githubProvider),
+      onGenerateRoute: _routes,
     );
+  }
+
+  Route _routes(RouteSettings settings) {
+    return MaterialPageRoute(
+        builder: (context) => settings.name == '/'
+            ? MembersListScreen(githubProvider)
+            : MemberReposScreen());
   }
 }

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:alpha_flutter_workshop_app/src/models/repo.dart';
 import 'package:http/http.dart' as http;
 import 'package:alpha_flutter_workshop_app/src/models/member.dart';
 
@@ -12,5 +13,10 @@ class GithubApiProvider {
     final membersList =
         parsedList.map((parsed) => Member.fromJson(parsed)).toList();
     return membersList;
+  }
+
+  Future<List<Repo>> getReposFromMember(String memberName) async {
+    // TODO implement the method and retrieve results from https://api.github.com/users/$memberName/repos.
+    return [];
   }
 }
