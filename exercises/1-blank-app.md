@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
 ```
 
 The resulting app should look like this:
+
 ![blank-app](./images/1-blank-app.png)
 
 ### Widgets required

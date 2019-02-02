@@ -113,6 +113,7 @@ class MyApp extends StatelessWidget {
 6. We can delete `my_home_screen.dart` as we don't use it anymore.
 
 The resulting app should look like this:
+
 ![member-list](./images/2-member-list.png)
 
 ### Widgets required
