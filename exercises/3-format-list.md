@@ -48,9 +48,9 @@ The resulting app should look like this:
 
 You will probably have to use the following widgets and resources:
 
-- ListTile for the list of members
+- `ListTile` for the list of members
 
-- CircleAvatar and NetworkImage to display the image for each member
+- `CircleAvatar` and `NetworkImage` to display the image for each member
 
 ### Pay attention to
 

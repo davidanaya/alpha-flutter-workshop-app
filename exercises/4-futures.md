@@ -68,9 +68,9 @@ The app should look exactly the same, but now we will get a small delay while we
 
 You will probably have to use the following widgets and resources:
 
-- FutureBuilder to build a widget based on a Future.
+- `FutureBuilder` to build a widget based on a Future.
 
-- CircularProgressIndicator to display a basic spinner.
+- `CircularProgressIndicator` to display a basic spinner.
 
 ### Pay attention to
 

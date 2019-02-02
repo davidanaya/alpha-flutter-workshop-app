@@ -36,11 +36,11 @@ The resulting app should look like this:
 
 You will probably have to use the following widgets and resources:
 
-- MaterialApp for the main application
+- `MaterialApp` for the main application
 
-- Scaffold for the new screen
+- `Scaffold` for the new screen
 
-- Text to display a the **Hello!** message
+- `Text` to display a the **Hello!** message
 
 ### Pay attention to
 

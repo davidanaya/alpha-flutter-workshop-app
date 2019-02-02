@@ -10,11 +10,11 @@ None.
 
 ### Pay attention to
 
-- StatelessWidget
+- `StatelessWidget`
 
-- StatefulWidget and concept of state
+- `StatefulWidget` and concept of state
 
-- MaterialApp and Scaffold
+- `MaterialApp` and `Scaffold`
 
 - Flutter composition model (widget tree)
 

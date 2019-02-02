@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-
 import 'package:alpha_flutter_workshop_app/src/models/member.dart';
+import 'package:alpha_flutter_workshop_app/src/screens/member_repos_screen.dart';
+import 'package:flutter/material.dart';
 
 class MemberTile extends StatelessWidget {
   final Member member;
@@ -15,6 +15,10 @@ class MemberTile extends StatelessWidget {
       ),
       title: Text(member.login),
       subtitle: Text(member.htmlUrl),
+      onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => MemberReposScreen()),
+          ),
     );
   }
 }

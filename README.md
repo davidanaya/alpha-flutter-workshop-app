@@ -23,3 +23,5 @@ You can click on each branch below to get to each exercise:
 [3-format-list](./exercises/3-format-list.md)
 
 [4-futures](./exercises/4-futures.md)
+
+[5-navigation](./exercises/5-navigation.md)

@@ -120,9 +120,9 @@ The resulting app should look like this:
 
 You will probably have to use the following widgets and resources:
 
-- ListView for the list of members
+- `ListView` for the list of members
 
-- Text to display the name of each member
+- `Text` to display the name of each member
 
 ### Pay attention to
 
