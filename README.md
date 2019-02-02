@@ -17,3 +17,5 @@ You can click on each branch below to get to each exercise:
 [0-counter-app](./exercises/0-counter-app.md)
 
 [1-blank-app](./exercises/1-blank-app.md)
+
+[2-github-org-members](./exercises/2-github-org-members.md)

@@ -1,4 +1,4 @@
-## 2-member-list
+## 2-github-org-members
 
 In this exercise we will use some fake json data to display a list of members from a github organization.
 
