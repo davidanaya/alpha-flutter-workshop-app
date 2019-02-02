@@ -14,4 +14,6 @@ The project has numbered branches that can be used to follow the workshop. Each 
 
 You can click on each branch below to get to each exercise:
 
-[0-start-default-counter-app](./exercises/0-counter-app.md)
+[0-counter-app](./exercises/0-counter-app.md)
+
+[1-blank-app](./exercises/1-blank-app.md)
