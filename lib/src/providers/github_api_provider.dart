@@ -16,7 +16,11 @@ class GithubApiProvider {
   }
 
   Future<List<Repo>> getReposFromMember(String memberName) async {
-    // TODO implement the method and retrieve results from https://api.github.com/users/$memberName/repos.
-    return [];
+    final response =
+        await http.get('https://api.github.com/users/$memberName/repos');
+    final List<dynamic> parsedList = json.decode(response.body);
+    final reposList =
+        parsedList.map((parsed) => Repo.fromJson(parsed)).toList();
+    return reposList;
   }
 }

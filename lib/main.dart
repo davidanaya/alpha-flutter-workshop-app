@@ -30,6 +30,6 @@ class MyApp extends StatelessWidget {
     return MaterialPageRoute(
         builder: (context) => settings.name == '/'
             ? MembersListScreen(githubProvider)
-            : MemberReposScreen());
+            : MemberReposScreen(githubProvider, memberName: settings.name));
   }
 }
