@@ -18,14 +18,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          onGenerateRoute: _routes,
+          home: MembersListScreen(),
         ));
-  }
-
-  Route _routes(RouteSettings settings) {
-    return MaterialPageRoute(
-        builder: (context) => settings.name == '/'
-            ? MembersListScreen()
-            : MemberReposScreen(memberName: settings.name));
   }
 }

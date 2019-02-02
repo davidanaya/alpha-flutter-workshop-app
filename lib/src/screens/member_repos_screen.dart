@@ -1,4 +1,5 @@
 import 'package:alpha_flutter_workshop_app/src/models/list_item.dart';
+import 'package:alpha_flutter_workshop_app/src/models/member.dart';
 import 'package:alpha_flutter_workshop_app/src/models/member_avatat.dart';
 import 'package:alpha_flutter_workshop_app/src/models/repo.dart';
 import 'package:alpha_flutter_workshop_app/src/scoped-models/github_api_provider.dart';
@@ -7,19 +8,17 @@ import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class MemberReposScreen extends StatelessWidget {
-  final String memberName;
-  final String avatarUrl =
-      'https://avatars2.githubusercontent.com/u/17270047?v=4';
+  final Member member;
 
-  MemberReposScreen({@required this.memberName});
+  MemberReposScreen({@required this.member});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text(memberName)),
+        appBar: AppBar(title: Text(member.login)),
         body: ScopedModelDescendant<GithubApiProvider>(
           builder: (context, child, GithubApiProvider provider) {
             return FutureBuilder(
-                future: provider.getReposFromMember(memberName),
+                future: provider.getReposFromMember(member.login),
                 builder: (context, AsyncSnapshot<List<ListItem>> snapshot) =>
                     snapshot.hasData
                         ? _buildList(snapshot.data)
@@ -29,7 +28,8 @@ class MemberReposScreen extends StatelessWidget {
   }
 
   Widget _buildList(List<ListItem> repos) {
-    final items = new List.from([MemberAvatar(avatarUrl)])..addAll(repos);
+    final items = new List.from([MemberAvatar(member.avatarUrl)])
+      ..addAll(repos);
 
     return ListView.builder(
       itemCount: items.length,
