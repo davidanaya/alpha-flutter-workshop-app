@@ -1,6 +1,6 @@
 import 'package:alpha_flutter_workshop_app/src/models/list_item.dart';
 import 'package:alpha_flutter_workshop_app/src/models/member.dart';
-import 'package:alpha_flutter_workshop_app/src/models/member_avatat.dart';
+import 'package:alpha_flutter_workshop_app/src/models/member_avatar.dart';
 import 'package:alpha_flutter_workshop_app/src/models/repo.dart';
 import 'package:alpha_flutter_workshop_app/src/scoped-models/github_api_provider.dart';
 import 'package:alpha_flutter_workshop_app/src/widgets/repo_tile.dart';
