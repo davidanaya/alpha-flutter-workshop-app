@@ -28,4 +28,4 @@ You can click on each branch below to get to each exercise:
 
 [6-member-repos](./exercises/6-member-repos.md)
 
-[7-open-url-repo](./exercises/7-open-url.md)
+[7-open-url-repo](./exercises/7-open-url-repo.md)
