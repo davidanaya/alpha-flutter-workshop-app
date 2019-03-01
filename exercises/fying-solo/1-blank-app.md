@@ -9,28 +9,10 @@ Remove everything that is not needed and generate a blank application.
 - Create a new folder `/src` inside of `/lib` where we will write all our code but the `main.dart` file where the initialization takes place.
 - Create a new folder `/screens` inside of `/lib/src` where we will create our screens.
 - Create a file `my_home_screen.dart` and move the initial page (screen) to that folder.
-- The `main.dart` file should be something like this (plus imports):
-
-```dart
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomeScreen(),
-    );
-  }
-}
-```
 
 The resulting app should look like this:
 
-![blank-app](./images/1-blank-app.png)
+![blank-app](../images/1-blank-app.png)
 
 ### Widgets required
 

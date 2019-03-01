@@ -18,7 +18,7 @@ These are the steps and requirements that you have to follow:
 
 The new screen should look like this:
 
-![member-repos](./images/6-member-repos.png)
+![member-repos](../images/6-member-repos.png)
 
 ### Widgets required
 

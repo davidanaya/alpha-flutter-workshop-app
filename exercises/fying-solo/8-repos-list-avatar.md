@@ -15,7 +15,7 @@ There are a few alternatives to achieve this, but as we already have that value 
 
 The repos screen should look like this:
 
-![repos-list-avatar](./images/8-repos-list-avatar.png)
+![repos-list-avatar](../images/8-repos-list-avatar.png)
 
 ### Widgets required
 

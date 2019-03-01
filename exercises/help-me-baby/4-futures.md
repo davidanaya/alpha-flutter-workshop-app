@@ -6,7 +6,7 @@ Real http calls to github api.
 
 It's time to replace the fake data with real one fetched from api.github with http.
 
-1. Add the [http library](https://pub.dartlang.org/packages/http) to our [pubspec.yaml](../pubspec.yaml)
+1. Add the [http library](https://pub.dartlang.org/packages/http) to our [pubspec.yaml](../../pubspec.yaml)
 
    Just edit the file and make sure the `dependencies` section looks like this:
 

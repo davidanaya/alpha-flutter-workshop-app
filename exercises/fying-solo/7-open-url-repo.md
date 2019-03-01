@@ -12,7 +12,7 @@ Add a button at the end of each repo tile. On tap, open a web browser and load t
 
 The repos screen should look like this:
 
-![open-url](./images/7-open-url.png)
+![open-url](../images/7-open-url.png)
 
 ### Widgets required
 

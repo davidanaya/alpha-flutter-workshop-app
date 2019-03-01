@@ -114,7 +114,7 @@ class MyApp extends StatelessWidget {
 
 The resulting app should look like this:
 
-![member-list](./images/2-member-list.png)
+![member-list](../images/2-member-list.png)
 
 ### Widgets required
 

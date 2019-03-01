@@ -12,28 +12,9 @@ For help setting up the environment, please check the [online documentation](htt
 
 The project has numbered branches that can be used to follow the workshop. Each branch has a related document within the exercises folder with the new functionality and the highlights.
 
-You can click on each branch below to get to each exercise:
+## Exercises
 
-[0-counter-app](./exercises/0-counter-app.md)
+There are 2 different sets of exercises that can be followed during the workshop.
 
-[1-blank-app](./exercises/1-blank-app.md)
-
-[2-github-org-members](./exercises/2-github-org-members.md)
-
-[3-format-list](./exercises/3-format-list.md)
-
-[4-futures](./exercises/4-futures.md)
-
-[5-navigation](./exercises/5-navigation.md)
-
-[6-member-repos](./exercises/6-member-repos.md)
-
-[7-open-url-repo](./exercises/7-open-url-repo.md)
-
-[8-repos-list-avatar](./exercises/8-repos-list-avatar.md)
-
-[9-scoped-model](./exercises/9-scoped-model.md)
-
-[10-refactor-avatar](./exercises/10-refactor-avatar.md)
-
-[11-hero-animation](./exercises/11-hero-animation.md)
+- [help-me-baby](./exercises/help-me-baby/index.md) are very detailed exercises which will lead you through the process with great detail at the beginning (instructions will be reduced as you get to the final steps in the workshop).
+- [flying-solo](./exercises/flying-solo/index.md) can be used when you want to face more challenges; intructions here are very loose, even though we will point you to some resources you can use to figure out the solutions yourself.

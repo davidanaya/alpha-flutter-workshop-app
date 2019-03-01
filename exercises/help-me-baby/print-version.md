@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
 
 The resulting app should look like this:
 
-![blank-app](./images/1-blank-app.png)
+![blank-app](../images/1-blank-app.png)
 
 ### Widgets required
 
@@ -192,7 +192,7 @@ class MyApp extends StatelessWidget {
 
 The resulting app should look like this:
 
-![member-list](./images/2-member-list.png)
+![member-list](../images/2-member-list.png)
 
 ### Widgets required
 
@@ -257,7 +257,7 @@ return Scaffold(
 
 The resulting app should look like this:
 
-![format-list](./images/3-format-list.png)
+![format-list](../images/3-format-list.png)
 
 ### Widgets required
 
@@ -415,7 +415,7 @@ These are the steps and requirements that you have to follow:
 
 The new screen should look like this:
 
-![member-repos](./images/6-member-repos.png)
+![member-repos](../images/6-member-repos.png)
 
 ### Widgets required
 
@@ -439,7 +439,7 @@ Add a button at the end of each repo tile. On tap, open a web browser and load t
 
 The repos screen should look like this:
 
-![open-url](./images/7-open-url.png)
+![open-url](../images/7-open-url.png)
 
 ### Widgets required
 
@@ -466,7 +466,7 @@ There are a few alternatives to achieve this, but as we already have that value 
 
 The repos screen should look like this:
 
-![repos-list-avatar](./images/8-repos-list-avatar.png)
+![repos-list-avatar](../images/8-repos-list-avatar.png)
 
 ### Widgets required
 

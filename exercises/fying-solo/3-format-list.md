@@ -10,39 +10,18 @@ We are going to replace the `Text` widget with the name with something better.
 
 ```dart
 class MemberTile extends StatelessWidget {
-  final Member member;
+  // TODO this widget needs a member
 
-  MemberTile(this.member);
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: CircleAvatar(
-        backgroundImage: NetworkImage(member.avatarUrl),
-      ),
-      title: Text(member.login),
-      subtitle: Text(member.htmlUrl),
-    );
-  }
+  // TODO create a build method and create the view for each member
+  // You can use ListTile or build your own widget
 }
 ```
 
 2. Now let's use it in our `MembersListScreen` instead of Text.
 
-```dart
-return Scaffold(
-  body: ListView.builder(
-    itemCount: members.length,
-    itemBuilder: (context, index) {
-      return MemberTile(members[index]);
-    },
-  ),
-);
-```
-
 The resulting app should look like this:
 
-![format-list](./images/3-format-list.png)
+![format-list](../images/3-format-list.png)
 
 ### Widgets required
 
