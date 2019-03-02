@@ -1,5 +1,4 @@
 import 'package:alpha_flutter_workshop_app/src/scoped-models/github_api_provider.dart';
-import 'package:alpha_flutter_workshop_app/src/screens/member_repos_screen.dart';
 import 'package:alpha_flutter_workshop_app/src/screens/members_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
